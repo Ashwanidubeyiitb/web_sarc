@@ -1,4 +1,4 @@
-from api.models import User
+from api.models import User, Todo
 from django.contrib.auth.password_validation import validate_password
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework import serializers
@@ -10,6 +10,11 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ('id', 'username', 'email')
 
+class TodoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Todo
+        fields = ('id','user_id', 'title', 'description', 'completed', 'date', 'time', 'location','completion_time')
+      
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
     def get_token(cls, user):
@@ -53,3 +58,8 @@ class RegisterSerializer(serializers.ModelSerializer):
         user.save()
 
         return user
+    
+
+
+
+    
