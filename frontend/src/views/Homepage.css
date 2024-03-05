@@ -1,0 +1,74 @@
+/* General styles */
+html, body {
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .homepage-container {
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+    margin-bottom: 5vh;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.4); /* Decrease brightness */
+  }
+  
+  .content-container {
+    position: relative;
+    z-index: 1;
+    padding-top: 7vh; /* Adjust margin from top */
+    height: calc(100vh - 20vh); /* Calculate height to fill remaining viewport space */
+  }
+  
+  .jumbotron {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker black jumbotron background color with opacity */
+    color: white; /* Text color */
+    padding: 5vw;
+    box-shadow: 0 0 5vw #ff1493, 0 0 10vw #ff1493; /* Glowing effect for jumbotron */
+  }
+  
+  .jumbotron h1 {
+    color: white; /* Text color */
+  }
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker black card background color with opacity */
+    border: none;
+    box-shadow: 0 0 5vw #ff1493, 0 0 10vw #ff1493; /* Glowing effect for cards */
+  }
+  
+  .card-body {
+    color: white; /* Text color */
+  }
+  
+  .btn-primary {
+    background-color: #ff1493; /* Pink color for the primary button */
+    border-color: #ff1493;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff69b4; /* Lighter pink color on hover */
+    border-color: #ff69b4;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .jumbotron {
+      padding: 5vh 5vw;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .jumbotron h1 {
+      font-size: 5vw;
+    }
+  }
+  

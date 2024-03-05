@@ -355,7 +355,7 @@ JAZZMIN_SETTINGS = {
     "welcome_sign": "Hey there...welcome back",
     "site_header": "Django & React JWT Authentication ",
     "site_brand": "Think | Create | Inspire",
-    "copyright": "www.desphixs.com",
+    
 }
 
 

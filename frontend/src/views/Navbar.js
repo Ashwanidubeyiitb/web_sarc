@@ -26,7 +26,7 @@ function Navbar() {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               {token === null &&
                 <>
@@ -42,10 +42,10 @@ function Navbar() {
               {token !== null &&
                 <>
                   <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">Dashboard</a>
+                    <a class="nav-link" href="/user">Profile</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/todo">Todo</a> {/* Add Todo link */}
+                    <a class="nav-link" href="/todo">Events</a> {/* Add Todo link */}
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" onClick={logoutUser} style={{ cursor: "pointer" }}>Logout</a>

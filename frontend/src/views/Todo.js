@@ -131,7 +131,7 @@ class Todo extends Component {
         );
 
         return newItems.map((item) => (
-            <div key={item.id} className="todo-card" style={{ marginBottom: "2vh" }}>
+           <div className="bada"> <div key={item.id} className="todo-card" style={{ marginBottom: "2vh" }}>
                 <div className="card-body">
                     <h5 className="card-title">{item.title}</h5>
                     <p className="card-text">{item.description}</p>
@@ -170,12 +170,13 @@ class Todo extends Component {
                     </div>
                 </div>
             </div>
+            </div>
         ));
     };
 
     render() {
         return (
-            <main className="container" style={{ backgroundColor: "#f2f2f2" }}>
+           <div className="bada"> <main className="container" style={{ backgroundColor: "#f2f2f2" }}>
                 <h1 className="text-white text-uppercase text-center my-4">Todo app</h1>
                 <div className="row">
                     <div className="col-md-6 col-sm-10 mx-auto p-0">
@@ -203,6 +204,7 @@ class Todo extends Component {
                     />
                 ) : null}
             </main>
+            </div>
         );
     }
 }

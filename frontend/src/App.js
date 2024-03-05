@@ -194,6 +194,7 @@ import Registerpage from './views/Registerpage';
 import Loginpage from './views/Loginpage';
 import Dashboard from './views/Dashboard';
 import Todo from './views/Todo'; // Import Todo component
+import UserProfile from './views/UserProfile';
 
 function App() {
   return (
@@ -205,7 +206,8 @@ function App() {
           <Route component={Loginpage} path="/login" />
           <Route component={Registerpage} path="/register" exact />
           <Route component={Homepage} path="/" exact />
-          <Route component={Todo} path="/todo" /> {/* Use Todo component in Route */}
+          <Route component={Todo} path="/todo" /> 
+          <Route component={UserProfile} path="/user" />{/* Use Todo component in Route */}
         </Switch>
       </AuthProvider>
     </Router>
